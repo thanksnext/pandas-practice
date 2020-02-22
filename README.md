@@ -69,7 +69,7 @@ total_mount = len(df_all)
 total_berth_mount = df_all['交易筆棟數'].str.split('車位',expand=True)[1].astype('int64').sum()
 #平均總價元
 avg_price = df_all['總價元'].astype('int64').mean()
-#平均車位總價元
+#平均車位總價元
 avg_berth_price = df_all['車位總價元'].astype('int64').mean()
 
 info_dict ={
